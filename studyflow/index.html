@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>StudyFlow</title>
+
+<style>
+body{
+font-family: Arial;
+margin:0;
+background:#f4f6ff;
+}
+
+header{
+background:#4a6cff;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+section{
+background:white;
+margin:20px;
+padding:20px;
+border-radius:10px;
+}
+
+h2{
+color:#4a6cff;
+}
+
+input{
+padding:10px;
+margin:5px;
+}
+
+button{
+padding:10px 15px;
+background:#4a6cff;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+li{
+margin:10px 0;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>StudyFlow</h1>
+<p>Smart planning for better learning</p>
+</header>
+
+<section>
+<h2>Add Study Task</h2>
+
+<input id="taskInput" placeholder="Enter your task">
+
+<button onclick="addTask()">Add Task</button>
+
+<ul id="taskList"></ul>
+
+</section>
+
+<section>
+<h2>Project Description</h2>
+<p>
+StudyFlow is a smart study planner designed for students.
+It helps organise homework, exams, deadlines and study tasks in one place.
+</p>
+</section>
+
+<section>
+<h2>About the Authors</h2>
+
+<p><b>Alikhan</b> – Developer</p>
+<p>Worked on coding the website.</p>
+
+<p><b>Zhan</b> – Designer / Researcher</p>
+<p>Worked on the project design and concept.</p>
+
+</section>
+
+<footer>
+<p>StudyFlow Project 2026</p>
+</footer>
+
+<script>
+
+function addTask(){
+
+let input = document.getElementById("taskInput");
+
+let task = input.value;
+
+if(task === "") return;
+
+let li = document.createElement("li");
+
+li.innerHTML = task + " <button onclick='deleteTask(this)'>Delete</button>";
+
+document.getElementById("taskList").appendChild(li);
+
+input.value="";
+
+}
+
+function deleteTask(button){
+
+button.parentElement.remove();
+
+}
+
+</script>
+
+</body>
+</html>
