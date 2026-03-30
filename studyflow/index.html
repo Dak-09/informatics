@@ -1,129 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-<meta charset="UTF-8">
-<title>StudyFlow</title>
-
-<style>
-body{
-font-family: Arial;
-margin:0;
-background:#f4f6ff;
-}
-
-header{
-background:#4a6cff;
-color:white;
-text-align:center;
-padding:40px;
-}
-
-section{
-background:white;
-margin:20px;
-padding:20px;
-border-radius:10px;
-}
-
-h2{
-color:#4a6cff;
-}
-
-input{
-padding:10px;
-margin:5px;
-}
-
-button{
-padding:10px 15px;
-background:#4a6cff;
-color:white;
-border:none;
-cursor:pointer;
-}
-
-li{
-margin:10px 0;
-}
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:20px;
-}
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoLife</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<header>
-<h1>StudyFlow</h1>
-<p>Smart planning for better learning</p>
-</header>
+  <header>
+    <div class="hero">
+      <h1>EcoLife 🌿</h1>
+      <p>Начни заботиться о природе уже сегодня</p>
+      <button onclick="scrollToAbout()">Подробнее</button>
+    </div>
+  </header>
 
-<section>
-<h2>Add Study Task</h2>
+  <section id="about" class="card">
+    <h2>О проекте</h2>
+    <p>
+      EcoLife — это экологический сайт, который помогает людям понять проблемы
+      окружающей среды и узнать, как можно беречь природу в повседневной жизни.
+    </p>
+  </section>
 
-<input id="taskInput" placeholder="Enter your task">
+  <section class="card">
+    <h2>Какую проблему решает сайт?</h2>
+    <p>
+      Сегодня загрязнение природы становится всё серьёзнее. Люди используют
+      слишком много пластика, не сортируют мусор и не всегда понимают,
+      как их привычки влияют на окружающую среду.
+    </p>
+  </section>
 
-<button onclick="addTask()">Add Task</button>
+  <section class="card">
+    <h2>Почему это важно?</h2>
+    <ul>
+      <li>Экология влияет на здоровье людей</li>
+      <li>Природу нужно сохранить для будущих поколений</li>
+      <li>Каждый человек может помочь окружающей среде</li>
+    </ul>
+  </section>
 
-<ul id="taskList"></ul>
+  <section class="card">
+    <h2>Функции сайта</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>Информация</h3>
+        <p>Сайт объясняет экологические проблемы простыми словами.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Советы</h3>
+        <p>Пользователь узнаёт простые экологические привычки.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Мотивация</h3>
+        <p>Сайт мотивирует людей заботиться о природе каждый день.</p>
+      </div>
+    </div>
+  </section>
 
+<section class="card counter-section">
+  <h2>Мои эко-действия за сегодня</h2>
+  <p>Выбери, что ты сделал сегодня 👇</p>
+
+  <div id="count">0</div>
+
+  <div class="eco-buttons">
+    <button onclick="increaseCount()">Выкинул мусор правильно</button>
+    <button onclick="increaseCount()">Посадил растение</button>
+    <button onclick="increaseCount()">Полил цветы</button>
+    <button onclick="increaseCount()">Сэкономил воду</button>
+    <button onclick="increaseCount()">Не использовал пластик</button>
+  </div>
+
+  <br>
+  <button onclick="resetCount()">Сбросить</button>
 </section>
 
-<section>
-<h2>Project Description</h2>
-<p>
-StudyFlow is a smart study planner designed for students.
-It helps organise homework, exams, deadlines and study tasks in one place.
-</p>
+  <section class="card">
+    <h2>Что делает проект уникальным?</h2>
+    <p>
+      Этот сайт создан в простом и понятном стиле. Он подходит для школьников,
+      студентов и всех, кто хочет начать заботиться о природе с маленьких шагов.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Технологии</h2>
+    <p>HTML, CSS, JavaScript</p>
+  </section>
+
+  <section class="card">
+    <h2>Будущие улучшения</h2>
+    <ul>
+      <li>Добавить тест по экологии</li>
+      <li>Добавить карту переработки мусора</li>
+      <li>Создать раздел с экологическими новостями</li>
+    </ul>
+  </section>
+
+  <section class="card">
+  <h2>Об авторах</h2>
+
+  <div class="feature-box">
+    <h3>Серекбек Жан</h3>
+    <p>Разработчик проекта</p>
+  </div>
+
+  <div class="feature-box">
+    <h3>Рыскали Алихан</h3>
+    <p>Дизайнер и разработчик</p>
+  </div>
+
+  <br>
+
+  <p>
+    Мы создали этот сайт, чтобы привлечь внимание к экологическим проблемам 
+    и мотивировать людей заботиться о природе.
+  </p>
 </section>
 
-<section>
-<h2>About the Authors</h2>
+  <footer>
+    <p>EcoLife © 2026 | Береги природу — она наш общий дом</p>
+  </footer>
 
-<p><b>Alikhan</b> – Developer</p>
-<p>Worked on coding the website.</p>
-
-<p><b>Zhan</b> – Designer / Researcher</p>
-<p>Worked on the project design and concept.</p>
-
-</section>
-
-<footer>
-<p>StudyFlow Project 2026</p>
-</footer>
-
-<script>
-
-function addTask(){
-
-let input = document.getElementById("taskInput");
-
-let task = input.value;
-
-if(task === "") return;
-
-let li = document.createElement("li");
-
-li.innerHTML = task + " <button onclick='deleteTask(this)'>Delete</button>";
-
-document.getElementById("taskList").appendChild(li);
-
-input.value="";
-
-}
-
-function deleteTask(button){
-
-button.parentElement.remove();
-
-}
-
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
