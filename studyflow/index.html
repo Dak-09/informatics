@@ -1,128 +1,134 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoLife</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Match Game</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <div class="hero">
-      <h1>EcoLife 🌿</h1>
-      <p>Начни заботиться о природе уже сегодня</p>
-      <button onclick="scrollToAbout()">Подробнее</button>
+  <header class="header">
+    <div class="container">
+      <h1>Memory Match Game</h1>
+      <p class="subtitle">Informatics Project Website</p>
     </div>
   </header>
 
-  <section id="about" class="card">
-    <h2>О проекте</h2>
-    <p>
-      EcoLife — это экологический сайт, который помогает людям понять проблемы
-      окружающей среды и узнать, как можно беречь природу в повседневной жизни.
-    </p>
+  <section class="hero">
+    <div class="container">
+      <h2>Train Your Memory in a Fun Way!</h2>
+      <p>
+        This project is a digital memory game website. Users open cards, find matching pairs,
+        improve concentration, and enjoy a simple interactive game.
+      </p>
+      <button class="main-btn" id="startBtn">Start / Restart Game</button>
+    </div>
   </section>
 
-  <section class="card">
-    <h2>Какую проблему решает сайт?</h2>
-    <p>
-      Сегодня загрязнение природы становится всё серьёзнее. Люди используют
-      слишком много пластика, не сортируют мусор и не всегда понимают,
-      как их привычки влияют на окружающую среду.
-    </p>
-  </section>
-
-  <section class="card">
-    <h2>Почему это важно?</h2>
-    <ul>
-      <li>Экология влияет на здоровье людей</li>
-      <li>Природу нужно сохранить для будущих поколений</li>
-      <li>Каждый человек может помочь окружающей среде</li>
-    </ul>
-  </section>
-
-  <section class="card">
-    <h2>Функции сайта</h2>
-    <div class="features">
-      <div class="feature-box">
-        <h3>Информация</h3>
-        <p>Сайт объясняет экологические проблемы простыми словами.</p>
+  <section class="about container">
+    <h2>About the Project</h2>
+    <div class="cards">
+      <div class="info-card">
+        <h3>Project Type</h3>
+        <p>Digital educational game website.</p>
       </div>
-      <div class="feature-box">
-        <h3>Советы</h3>
-        <p>Пользователь узнаёт простые экологические привычки.</p>
+      <div class="info-card">
+        <h3>Main Goal</h3>
+        <p>To help users improve memory, attention, and concentration.</p>
       </div>
-      <div class="feature-box">
-        <h3>Мотивация</h3>
-        <p>Сайт мотивирует людей заботиться о природе каждый день.</p>
+      <div class="info-card">
+        <h3>Target Users</h3>
+        <p>Students, children, and people who want to train memory skills.</p>
       </div>
     </div>
   </section>
 
-<section class="card counter-section">
-  <h2>Мои эко-действия за сегодня</h2>
-  <p>Выбери, что ты сделал сегодня 👇</p>
-
-  <div id="count">0</div>
-
-  <div class="eco-buttons">
-    <button onclick="increaseCount()">Выкинул мусор правильно</button>
-    <button onclick="increaseCount()">Посадил растение</button>
-    <button onclick="increaseCount()">Полил цветы</button>
-    <button onclick="increaseCount()">Сэкономил воду</button>
-    <button onclick="increaseCount()">Не использовал пластик</button>
-  </div>
-
-  <br>
-  <button onclick="resetCount()">Сбросить</button>
-</section>
-
-  <section class="card">
-    <h2>Что делает проект уникальным?</h2>
-    <p>
-      Этот сайт создан в простом и понятном стиле. Он подходит для школьников,
-      студентов и всех, кто хочет начать заботиться о природе с маленьких шагов.
-    </p>
+  <section id="game" class="container game-section">
+    <h2>Game</h2>
+    <div class="game-stats">
+      <div class="stat-box">Moves: <span id="moves">0</span></div>
+      <div class="stat-box">Matches: <span id="matches">0</span>/8</div>
+    </div>
+    <div class="game-board" id="gameBoard"></div>
   </section>
 
-  <section class="card">
-    <h2>Технологии</h2>
-    <p>HTML, CSS, JavaScript</p>
+  <section class="container">
+    <h2>Project Plan</h2>
+    <div class="plan-box">
+      <p><b>10 March 2026</b> – We chose the idea of creating a memory game website.</p>
+      <p><b>15 March 2026</b> – We planned the homepage and discussed the project design.</p>
+      <p><b>20 March 2026</b> – We started coding the website using HTML, CSS, and JavaScript.</p>
+      <p><b>27 March 2026</b> – We tested the game and checked the card matching system.</p>
+      <p><b>5 April 2026</b> – Final presentation of the project.</p>
+    </div>
   </section>
 
-  <section class="card">
-    <h2>Будущие улучшения</h2>
-    <ul>
-      <li>Добавить тест по экологии</li>
-      <li>Добавить карту переработки мусора</li>
-      <li>Создать раздел с экологическими новостями</li>
-    </ul>
+  <section class="container">
+    <h2>Interview with Adilkhan Agay</h2>
+    <div class="interview-box">
+      <div class="qa-item">
+        <h3>1. Why did you choose this topic?</h3>
+        <p>We chose this topic because memory games are useful, simple, and interesting. They help users train their brain in a fun way.</p>
+      </div>
+      <div class="qa-item">
+        <h3>2. Why is this project important?</h3>
+        <p>This project is important because it combines education and entertainment. It shows that digital games can also be useful for learning.</p>
+      </div>
+      <div class="qa-item">
+        <h3>3. Who can use this website?</h3>
+        <p>Children, students, and adults can use this website. It is easy for different age groups.</p>
+      </div>
+      <div class="qa-item">
+        <h3>4. What is the main aim of the game?</h3>
+        <p>The main aim is to find matching pairs of cards and improve memory, attention, and concentration.</p>
+      </div>
+      <div class="qa-item">
+        <h3>5. What technologies did you use?</h3>
+        <p>We used HTML for the structure, CSS for the design, and JavaScript for the interactive game logic.</p>
+      </div>
+      <div class="qa-item">
+        <h3>6. What part of the project was the most difficult?</h3>
+        <p>The most difficult part was writing the JavaScript code for flipping cards and checking matches correctly.</p>
+      </div>
+      <div class="qa-item">
+        <h3>7. What part of the project was the most interesting?</h3>
+        <p>The most interesting part was creating the game and seeing how the cards worked on the website.</p>
+      </div>
+      <div class="qa-item">
+        <h3>8. How does this project help students?</h3>
+        <p>This project helps students improve memory skills and also shows how websites and games can be created with programming.</p>
+      </div>
+      <div class="qa-item">
+        <h3>9. Why did you make the design colorful?</h3>
+        <p>We made the design simple and colorful so it would look attractive, modern, and easy to use.</p>
+      </div>
+      <div class="qa-item">
+        <h3>10. What result do you expect from users?</h3>
+        <p>We expect users to enjoy the game, spend time usefully, and improve their memory and attention.</p>
+      </div>
+    </div>
   </section>
 
-  <section class="card">
-  <h2>Об авторах</h2>
+  <section class="container authors-section">
+    <h2>Division of Work</h2>
+    <div class="cards">
+      <div class="info-card">
+        <h3>Серекбек Жан</h3>
+        <p>Created the HTML structure of the website: header, sections, project plan, interview, and footer.</p>
+      </div>
+      <div class="info-card">
+        <h3>Рыскали Алихан</h3>
+        <p>Created the CSS design and JavaScript logic: card flipping, matching system, moves counter, and restart button.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="feature-box">
-    <h3>Серекбек Жан</h3>
-    <p>Разработчик проекта</p>
-  </div>
-
-  <div class="feature-box">
-    <h3>Рыскали Алихан</h3>
-    <p>Дизайнер и разработчик</p>
-  </div>
-
-  <br>
-
-  <p>
-    Мы создали этот сайт, чтобы привлечь внимание к экологическим проблемам 
-    и мотивировать людей заботиться о природе.
-  </p>
-</section>
-
-  <footer>
-    <p>EcoLife © 2026 | Береги природу — она наш общий дом</p>
+  <footer class="footer">
+    <div class="container">
+      <p><b>Authors:</b> Серекбек Жан, Рыскали Алихан</p>
+      <p>Informatics Project • 2026</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
