@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CardQuest | Project Homepage</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 44px;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 18px;
+    }
+
+    nav {
+      background: white;
+      padding: 14px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      list-style: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1e3a8a;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: 40px auto;
+    }
+
+    section {
+      background: white;
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      color: #1e3a8a;
+      margin-bottom: 16px;
+      font-size: 28px;
+    }
+
+    h3 {
+      margin: 18px 0 10px;
+      color: #1d4ed8;
+    }
+
+    .hero-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: #eff6ff;
+      border-left: 6px solid #2563eb;
+      padding: 18px;
+      border-radius: 14px;
+    }
+
+    .feature-list, .timeline, .tech-list, .interview-list {
+      padding-left: 20px;
+    }
+
+    .authors {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .author-box {
+      background: #f8fafc;
+      border: 1px solid #dbeafe;
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .highlight {
+      background: #dbeafe;
+      padding: 4px 8px;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #1e3a8a;
+    }
+
+    .quote {
+      background: #f0f9ff;
+      border-left: 5px solid #0ea5e9;
+      padding: 18px;
+      border-radius: 12px;
+      margin-top: 16px;
+      font-style: italic;
+    }
+
+    .prototype-box {
+      background: #f8fafc;
+      border: 2px dashed #93c5fd;
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px 40px;
+      color: #475569;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 18px;
+      background: #2563eb;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CardQuest</h1>
+    <p>
+      A creative digital card game project homepage. This website introduces our idea,
+      explains the problem it solves, presents future plans, and includes an interview
+      with <strong>Adylkhan Agay</strong> about the value of card-based learning and strategy games.
+    </p>
+    <a href="#project" class="btn">Explore Project</a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#functions">Requirements</a></li>
+      <li><a href="#technical">Technical</a></li>
+      <li><a href="#prototype">Prototype</a></li>
+      <li><a href="#interview">Interview</a></li>
+      <li><a href="#authors">Authors</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section id="project">
+      <h2>Project Description</h2>
+      <p>
+        <span class="highlight">CardQuest</span> is a planned digital card game where players use strategy,
+        logic, and quick decision-making to win against opponents. At this stage, we are not building
+        the playable version yet. We are focusing on the homepage that introduces the project idea clearly.
+      </p>
+      <div class="hero-cards">
+        <div class="card">
+          <h3>What is it?</h3>
+          <p>A strategy-based card game concept designed for students and young players who enjoy competition and creativity.</p>
+        </div>
+        <div class="card">
+          <h3>What problem does it solve?</h3>
+          <p>Many students spend time on passive entertainment. Our idea offers a more interactive game that trains thinking and planning skills.</p>
+        </div>
+        <div class="card">
+          <h3>Why is it important?</h3>
+          <p>Games can be more than fun. They can improve concentration, memory, and teamwork when designed with purpose.</p>
+        </div>
+        <div class="card">
+          <h3>What makes it unique?</h3>
+          <p>It combines a modern digital style with a classic card game concept and can later include original characters, levels, and story elements.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="functions">
+      <h2>Functional Requirements</h2>
+      <p>In the future, the product should include the following functions:</p>
+      <ul class="feature-list">
+        <li>User can open the game homepage and read about the project.</li>
+        <li>User can learn the rules and main idea of the game.</li>
+        <li>User can see character or card categories.</li>
+        <li>User can create a player profile in the full version.</li>
+        <li>User can start a match and collect points in the future version.</li>
+        <li>User can see score, win/lose result, and progress.</li>
+        <li>User can access updates and future improvements.</li>
+      </ul>
+    </section>
+
+    <section id="technical">
+      <h2>Technical Requirements</h2>
+      <ul class="tech-list">
+        <li><strong>Languages:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Design:</strong> Responsive layout, clean structure, modern colors</li>
+        <li><strong>Hosting:</strong> GitHub Pages or Railway</li>
+        <li><strong>Repository:</strong> GitHub public repository</li>
+        <li><strong>Future tools:</strong> JavaScript game logic, local storage, animations</li>
+      </ul>
+      <p>
+        For now, this page is the <strong>homepage/prototype</strong>. The interactive card game will be added later.
+      </p>
+    </section>
+
+    <section id="prototype">
+      <h2>Sketches / Prototype Design</h2>
+      <p>
+        This homepage acts as the first digital prototype of the project. It shows the visual style,
+        structure, and information architecture of the future product.
+      </p>
+      <div class="prototype-box">
+        <h3>Prototype Idea</h3>
+        <p>Hero section → Project overview → Requirements → Interview → Authors → Timeline</p>
+        <p>You can later replace this block with screenshots, hand-drawn sketches, or Canva/Figma design images.</p>
+      </div>
+    </section>
+
+    <section id="interview">
+      <h2>Interview with Adylkhan Agay</h2>
+      <p>
+        To understand whether the card game idea is interesting and useful, we prepared a short interview with <strong>Adylkhan Agay</strong>.
+      </p>
+
+      <h3>Main Questions and Answers</h3>
+      <ol class="interview-list">
+        <li><strong>Why do card games attract students?</strong><br>
+          Because they are simple to understand, competitive, and develop strategic thinking.
+        </li>
+        <li><strong>Can a card game be educational?</strong><br>
+          Yes. If the game has rules, planning, and problem-solving elements, it can train memory, logic, and communication.
+        </li>
+        <li><strong>What is important in designing a good card game?</strong><br>
+          The game should have clear rules, balanced cards, interesting visuals, and a fair scoring system.
+        </li>
+        <li><strong>Would students be interested in a digital card game?</strong><br>
+          Yes, especially if it is easy to play, visually attractive, and gives players a chance to improve their skills.
+        </li>
+        <li><strong>What advice would you give to our team?</strong><br>
+          Start with a clear concept, design the homepage well, and then build the game step by step.
+        </li>
+      </ol>
+
+      <div class="quote">
+        “A good card game is not only about winning. It should also make players think, choose, and learn from every move.” — Adylkhan Agay
+      </div>
+    </section>
+
+    <section id="authors">
+      <h2>About the Authors</h2>
+      <div class="authors">
+        <div class="author-box">
+          <h3>Alihan</h3>
+          <p><strong>Role:</strong> Project Designer / Content Researcher</p>
+          <p><strong>What he does:</strong></p>
+          <ul class="feature-list">
+            <li>Creates the homepage structure and project idea presentation</li>
+            <li>Researches card game concepts and target audience needs</li>
+            <li>Prepares the interview questions for Adylkhan Agay</li>
+            <li>Chooses colors, sections, and visual style of the website</li>
+            <li>Helps organize project description and future improvements</li>
+          </ul>
+          <p><strong>Strengths:</strong> Creative thinking, planning, design ideas</p>
+        </div>
+        <div class="author-box">
+          <h3>Zhan</h3>
+          <p><strong>Role:</strong> Frontend Developer / Technical Builder</p>
+          <p><strong>What he does:</strong></p>
+          <ul class="feature-list">
+            <li>Writes the HTML and CSS code for the homepage</li>
+            <li>Builds the website layout and navigation menu</li>
+            <li>Prepares the project for GitHub upload and deployment</li>
+            <li>Plans how JavaScript can be added in the future</li>
+            <li>Supports technical development of the future card game</li>
+          </ul>
+          <p><strong>Strengths:</strong> Coding, web structure, technical implementation</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline">
+      <h2>Timeline of Development</h2>
+
+      <h3>Alpha Version (1 April – 15 April)</h3>
+      <ul class="timeline">
+        <li>Define idea and concept of the card game</li>
+        <li>Research similar games and target audience</li>
+        <li>Create homepage structure (sections and content)</li>
+        <li>Write project description and requirements</li>
+      </ul>
+
+      <h3>Beta Version (16 April – 5 May)</h3>
+      <ul class="timeline">
+        <li>Design homepage using HTML and CSS</li>
+        <li>Add interview section with Adylkhan Agay</li>
+        <li>Improve layout, colors, and visual style</li>
+        <li>Test website structure and fix mistakes</li>
+      </ul>
+
+      <h3>Final Version (6 May – 14 May)</h3>
+      <ul class="timeline">
+        <li>Finalize homepage design and content</li>
+        <li>Prepare project for GitHub upload</li>
+        <li>Deploy website (GitHub Pages or Railway)</li>
+        <li>Make final improvements and prepare for presentation</li>
+      </ul>
+
+      <h3>Expected Future Improvements</h3>
+      <ul class="timeline">
+        <li>Add a real playable card game interface</li>
+        <li>Create player accounts and score tracking</li>
+        <li>Improve animations and mobile design</li>
+        <li>Add more levels, characters, and card types</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>CardQuest Project Homepage © 2026</p>
+    <p>Designed for a Kickstarter-style product development project.</p>
+  </footer>
+</body>
+</html>

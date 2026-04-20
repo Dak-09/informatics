@@ -1,134 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memory Match Game</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Quest Alpha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="background-glow glow-1"></div>
+  <div class="background-glow glow-2"></div>
 
-  <header class="header">
-    <div class="container">
-      <h1>Memory Match Game</h1>
-      <p class="subtitle">Informatics Project Website</p>
+  <header class="hero">
+    <div class="hero__text">
+      <span class="tag">Alpha Version</span>
+      <h1>Card Quest</h1>
+      <p class="subtitle">
+        A simple and beautiful memory card game in English. Flip cards, find matching pairs,
+        beat your best score, and enjoy smooth gameplay.
+      </p>
+
+      <div class="authors">
+        <div class="author-card">
+          <span class="author-label">Author</span>
+          <strong>Ryskali Alikhan</strong>
+        </div>
+        <div class="author-card">
+          <span class="author-label">Author</span>
+          <strong>Serekbek Zhan</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-panel">
+      <div class="stat-box">
+        <span class="stat-title">Time</span>
+        <strong id="time">00:00</strong>
+      </div>
+      <div class="stat-box">
+        <span class="stat-title">Moves</span>
+        <strong id="moves">0</strong>
+      </div>
+      <div class="stat-box">
+        <span class="stat-title">Matches</span>
+        <strong id="matches">0 / 6</strong>
+      </div>
+
+      <div class="buttons">
+        <button id="startBtn" class="btn btn-primary">Start Game</button>
+        <button id="restartBtn" class="btn btn-secondary">Restart</button>
+      </div>
+
+      <div class="helper-box">
+        <h3>How to Play</h3>
+        <ol>
+          <li>Press <b>Start Game</b>.</li>
+          <li>Click two cards to flip them.</li>
+          <li>Find all matching pairs.</li>
+          <li>Finish with fewer moves and less time.</li>
+        </ol>
+      </div>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Train Your Memory in a Fun Way!</h2>
-      <p>
-        This project is a digital memory game website. Users open cards, find matching pairs,
-        improve concentration, and enjoy a simple interactive game.
-      </p>
-      <button class="main-btn" id="startBtn">Start / Restart Game</button>
-    </div>
-  </section>
+  <main class="game-section">
+    <section class="board-wrap">
+      <div id="message" class="message">
+        Press <b>Start Game</b> to begin your alpha version test.
+      </div>
+      <div id="gameBoard" class="game-board" aria-label="Memory card game board"></div>
+    </section>
 
-  <section class="about container">
-    <h2>About the Project</h2>
-    <div class="cards">
-      <div class="info-card">
-        <h3>Project Type</h3>
-        <p>Digital educational game website.</p>
-      </div>
-      <div class="info-card">
-        <h3>Main Goal</h3>
-        <p>To help users improve memory, attention, and concentration.</p>
-      </div>
-      <div class="info-card">
-        <h3>Target Users</h3>
-        <p>Students, children, and people who want to train memory skills.</p>
-      </div>
-    </div>
-  </section>
+    <aside class="features-panel">
+      <h2>Alpha Version Features</h2>
+      <ul>
+        <li>Working memory card game</li>
+        <li>Easy click-based gameplay</li>
+        <li>Move and timer tracking</li>
+        <li>Match detection logic</li>
+        <li>Restart button for testing</li>
+        <li>Responsive modern design</li>
+      </ul>
 
-  <section id="game" class="container game-section">
-    <h2>Game</h2>
-    <div class="game-stats">
-      <div class="stat-box">Moves: <span id="moves">0</span></div>
-      <div class="stat-box">Matches: <span id="matches">0</span>/8</div>
-    </div>
-    <div class="game-board" id="gameBoard"></div>
-  </section>
-
-  <section class="container">
-    <h2>Project Plan</h2>
-    <div class="plan-box">
-      <p><b>20 january 2026</b> – We chose the idea of creating a memory game website.</p>
-      <p><b>7  March 2026</b> – We planned the homepage and discussed the project design.</p>
-      <p><b>20 March 2026</b> – We started coding the website using HTML, CSS, and JavaScript.</p>
-      <p><b>20 April 2026</b> – We tested the game and checked the card matching system.</p>
-      <p><b>5 May 2026</b> – Final presentation of the project.</p>
-    </div>
-  </section>
-
-  <section class="container">
-    <h2>Interview with Adilkhan Agay</h2>
-    <div class="interview-box">
-      <div class="qa-item">
-        <h3>1. Why did you choose this topic?</h3>
-        <p>We chose this topic because memory games are useful, simple, and interesting. They help users train their brain in a fun way.</p>
+      <div class="alpha-note">
+        <h3>Development Note</h3>
+        <p>
+          This alpha version focuses on core functionality first, which is important for a working
+          prototype and testing stage.
+        </p>
       </div>
-      <div class="qa-item">
-        <h3>2. Why is this project important?</h3>
-        <p>This project is important because it combines education and entertainment. It shows that digital games can also be useful for learning.</p>
-      </div>
-      <div class="qa-item">
-        <h3>3. Who can use this website?</h3>
-        <p>Children, students, and adults can use this website. It is easy for different age groups.</p>
-      </div>
-      <div class="qa-item">
-        <h3>4. What is the main aim of the game?</h3>
-        <p>The main aim is to find matching pairs of cards and improve memory, attention, and concentration.</p>
-      </div>
-      <div class="qa-item">
-        <h3>5. What technologies did you use?</h3>
-        <p>We used HTML for the structure, CSS for the design, and JavaScript for the interactive game logic.</p>
-      </div>
-      <div class="qa-item">
-        <h3>6. What part of the project was the most difficult?</h3>
-        <p>The most difficult part was writing the JavaScript code for flipping cards and checking matches correctly.</p>
-      </div>
-      <div class="qa-item">
-        <h3>7. What part of the project was the most interesting?</h3>
-        <p>The most interesting part was creating the game and seeing how the cards worked on the website.</p>
-      </div>
-      <div class="qa-item">
-        <h3>8. How does this project help students?</h3>
-        <p>This project helps students improve memory skills and also shows how websites and games can be created with programming.</p>
-      </div>
-      <div class="qa-item">
-        <h3>9. Why did you make the design colorful?</h3>
-        <p>We made the design simple and colorful so it would look attractive, modern, and easy to use.</p>
-      </div>
-      <div class="qa-item">
-        <h3>10. What result do you expect from users?</h3>
-        <p>We expect users to enjoy the game, spend time usefully, and improve their memory and attention.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="container authors-section">
-    <h2>Division of Work</h2>
-    <div class="cards">
-      <div class="info-card">
-        <h3>Серекбек Жан</h3>
-        <p>Created the HTML structure of the website: header, sections, project plan, interview, and footer.</p>
-      </div>
-      <div class="info-card">
-        <h3>Рыскали Алихан</h3>
-        <p>Created the CSS design and JavaScript logic: card flipping, matching system, moves counter, and restart button.</p>
-      </div>
-    </div>
-  </section>
+    </aside>
+  </main>
 
   <footer class="footer">
-    <div class="container">
-      <p><b>Authors:</b> Серекбек Жан, Рыскали Алихан</p>
-      <p>Informatics Project • 2026</p>
-    </div>
+    <p>Card Quest Alpha • Built with HTML, CSS and JavaScript</p>
   </footer>
 
   <script src="script.js"></script>
