@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Quest Beta Version</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero-card">
+        <span class="version">Beta Version</span>
+        <h1>Card Quest</h1>
+        <p>
+          A beta memory card guessing game with difficulty levels, timer,
+          scoring system, smooth animations and a result screen.
+        </p>
+
+        <div class="authors">
+          <div>
+            <small>Author</small>
+            <strong>Ryskali Alikhan</strong>
+          </div>
+          <div>
+            <small>Author</small>
+            <strong>Serekbek Zhan</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="control-card">
+        <h2>Game Controls</h2>
+
+        <div class="buttons">
+          <button id="startBtn" class="primary">Start Game</button>
+          <button id="pauseBtn" class="secondary">Pause</button>
+          <button id="hintBtn" class="secondary">Hint</button>
+          <button id="restartBtn" class="secondary">Restart</button>
+        </div>
+
+        <div class="how">
+          <h3>How to Play</h3>
+          <ol>
+            <li>Press Start Game.</li>
+            <li>Flip two cards and find pairs.</li>
+            <li>Use Hint carefully: it costs score.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><span>Time</span><strong id="time">00:60</strong></div>
+      <div><span>Moves</span><strong id="moves">0</strong></div>
+      <div><span>Matches</span><strong id="matches">0 / 4</strong></div>
+      <div><span>Score</span><strong id="score">0</strong></div>
+      <div><span>Combo</span><strong id="combo">x0</strong></div>
+      <div><span>Hints</span><strong id="hints">3</strong></div>
+      <div><span>Best Score</span><strong id="bestScore">0</strong></div>
+    </section>
+
+    <section class="game-layout">
+      <section class="board-card">
+        <div class="board-top">
+          <div id="message" class="message">
+            Choose a level and press <b>Start Game</b>.
+          </div>
+          <div id="statusChip" class="status-chip">Standby</div>
+        </div>
+
+        <div class="time-track" aria-hidden="true">
+          <div id="timeFill" class="time-fill"></div>
+        </div>
+
+        <div id="gameBoard" class="game-board"></div>
+      </section>
+
+      <aside class="features-card">
+        <h2>Beta Features</h2>
+        <ul>
+          <li>Realistic card flip animation</li>
+          <li>Timer, moves, combo and score system</li>
+          <li>Preview before game starts</li>
+          <li>Pause and hint controls</li>
+          <li>Best score saved in browser</li>
+          <li>Win / lose result screen</li>
+          <li>Responsive UI design</li>
+        </ul>
+
+        <div class="note">
+          <h3>Beta Note</h3>
+          <p>
+            This beta version improves the alpha prototype with stronger mechanics,
+            more attractive design, better usability and stable gameplay.
+          </p>
+        </div>
+
+        <div class="final-features">
+          <h3>Key Features for Final</h3>
+          <ul>
+            <li>More card image sets and themes</li>
+            <li>Sound effects for flip, match and win states</li>
+            <li>Animated difficulty missions</li>
+            <li>Leaderboard for best scores and combos</li>
+            <li>Improved mobile layout and animations</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-box">
+      <h2 id="modalTitle">You Win!</h2>
+      <p id="modalText">Your result will appear here.</p>
+      <button onclick="startGame()" class="primary">Play Again</button>
+    </div>
+  </div>
+
+  <script src="card-quest.js"></script>
+</body>
+</html>
